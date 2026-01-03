@@ -3,132 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Worst Crime in the World</title>
+    <title>Billionaires</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: linear-gradient(to bottom, #0a0a0a, #1a0000);
-            color: #ff0000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             min-height: 100vh;
-            padding: 60px 20px;
-            line-height: 1.8;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 60px;
-            border: 3px solid #8b0000;
-            box-shadow: 0 0 40px rgba(139, 0, 0, 0.5),
-                        inset 0 0 60px rgba(0, 0, 0, 0.8);
+        .colorful-text {
+            font-size: 72px;
+            font-weight: bold;
         }
         
-        h1 {
-            font-size: 3.5em;
-            font-weight: 900;
+        .colorful-text span {
+            display: inline-block;
+            animation: wave 2s ease-in-out infinite;
+        }
+        
+        .colorful-text span:nth-child(1) { color: #ff6b6b; animation-delay: 0s; }
+        .colorful-text span:nth-child(2) { color: #4ecdc4; animation-delay: 0.1s; }
+        .colorful-text span:nth-child(3) { color: #45b7d1; animation-delay: 0.2s; }
+        .colorful-text span:nth-child(4) { color: #f9ca24; animation-delay: 0.3s; }
+        .colorful-text span:nth-child(5) { color: #f0932b; animation-delay: 0.4s; }
+        .colorful-text span:nth-child(6) { color: #eb4d4b; animation-delay: 0.5s; }
+        .colorful-text span:nth-child(7) { color: #6c5ce7; animation-delay: 0.6s; }
+        .colorful-text span:nth-child(8) { color: #a29bfe; animation-delay: 0.7s; }
+        .colorful-text span:nth-child(9) { color: #fd79a8; animation-delay: 0.8s; }
+        .colorful-text span:nth-child(10) { color: #00b894; animation-delay: 0.9s; }
+        .colorful-text span:nth-child(11) { color: #0984e3; animation-delay: 1s; }
+        .colorful-text span:nth-child(12) { color: #e17055; animation-delay: 1.1s; }
+        
+        @keyframes wave {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .footer {
+            margin-top: 60px;
             text-align: center;
-            margin-bottom: 50px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 0 0 20px #ff0000,
-                         0 0 40px #8b0000;
-            line-height: 1.2;
-            color: #ff0000;
-            border-bottom: 4px solid #8b0000;
-            padding-bottom: 30px;
+            color: #333;
         }
         
-        p {
-            font-size: 1.3em;
-            margin-bottom: 1.8em;
-            text-align: justify;
-            font-weight: 400;
-            text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+        .footer p {
+            font-size: 18px;
+            margin-bottom: 15px;
         }
         
-        p:first-of-type {
-            font-size: 1.6em;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 2.5em;
-            color: #ff2020;
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
         }
         
-        p:nth-last-child(1),
-        p:nth-last-child(2) {
-            font-style: italic;
-            font-size: 1.4em;
-            margin-top: 2em;
-            padding: 20px;
-            border-left: 5px solid #8b0000;
-            background: rgba(139, 0, 0, 0.1);
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
         
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px;
-            }
-            
-            h1 {
-                font-size: 2.2em;
-            }
-            
-            p {
-                font-size: 1.1em;
-            }
+        .links a {
+            color: #0984e3;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        .links a:hover {
+            color: #6c5ce7;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>The Worst Crime in the World</h1>
-        
-        <p>Circumcision is the worst crime ever normalized.</p>
-        
-        <p>Right after leaving the safest place you'll ever know—your mother's womb—you get strapped down.</p>
-        
-        <p>A blade cuts through your most pleasurable body part for 10–20 minutes.</p>
-        
-        <p>You scream until your eyes bleed and your lungs collapse from exhaustion.</p>
-        
-        <p>The doctor swore "first, do no harm" while doing exactly that.</p>
-        
-        <p>Your parents maybe didn't know.</p>
-        
-        <p>They were told it was safer, cleaner, or required by God.</p>
-        
-        <p>They trusted the system.</p>
-        
-        <p>They possibly handed you over thinking they were protecting you.</p>
-        
-        <p>They'll never be told the foreskin wasn't "extra skin"—it was almost all the sensitive tissue you were supposed to have for life.</p>
-        
-        <p>You won't know what slow, deep, effortless sex feels like.</p>
-        
-        <p>Sex will take more work, more lube, less feeling.</p>
-        
-        <p>You'll wonder why it feels like something's missing and be told "that's normal."</p>
-        
-        <p>You might feel jealous of women, angry at your own body, and feel conflicted for feeling that way.</p>
-        
-        <p>You'll possibly cope for life.</p>
-        
-        <p>And if you ever speak up, people will laugh and say "get over it, you were just a baby."</p>
-        
-        <p>But it was a crime.</p>
-        
-        <p>One day this will be seen like bloodletting or lobotomies—something we can't believe we ever did to babies.</p>
-        
-        <p>If you're reading this and you're cut, your pain is real.</p>
-        
-        <p>If you're reading this and you're a parent who chose accidentally it, please apologize and ask for forgiveness.</p>
+    <div class="colorful-text">
+        <span>b</span><span>i</span><span>l</span><span>l</span><span>i</span><span>o</span><span>n</span><span>a</span><span>i</span><span>r</span><span>e</span><span>s</span>
+    </div>
+    
+    <div class="footer">
+        <p>Brought to you by Awesome</p>
+        <img src="logo.png" alt="Awesome Logo" class="logo">
+        <div class="links">
+            <a href="https://open.spotify.com/artist/2mYyHcMB3Zswr7Sx436eUt?si=-bjUuRRgQX2SvfZjYdpntA" target="_blank">Spotify</a>
+            <a href="https://music.apple.com/us/artist/awesome/1698324358" target="_blank">Apple Music</a>
+            <a href="https://music.amazon.com/artists/B0CCK5YJ4D/awesome" target="_blank">Amazon Music</a>
+            <a href="https://youtube.com/@awesomeheals?si=f1c-JMRJOxEPtpNx" target="_blank">YouTube</a>
+            <a href="https://AwesomeHeals.com" target="_blank">AwesomeHeals.com</a>
+        </div>
     </div>
 </body>
 </html>

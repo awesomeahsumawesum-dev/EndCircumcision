@@ -1,66 +1,134 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>The Worst Crime in the World</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(to bottom, #0a0a0a, #1a0000);
+            color: #ff0000;
+            min-height: 100vh;
+            padding: 60px 20px;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 60px;
+            border: 3px solid #8b0000;
+            box-shadow: 0 0 40px rgba(139, 0, 0, 0.5),
+                        inset 0 0 60px rgba(0, 0, 0, 0.8);
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px #ff0000,
+                         0 0 40px #8b0000;
+            line-height: 1.2;
+            color: #ff0000;
+            border-bottom: 4px solid #8b0000;
+            padding-bottom: 30px;
+        }
+        
+        p {
+            font-size: 1.3em;
+            margin-bottom: 1.8em;
+            text-align: justify;
+            font-weight: 400;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+        }
+        
+        p:first-of-type {
+            font-size: 1.6em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 2.5em;
+            color: #ff2020;
+        }
+        
+        p:nth-last-child(1),
+        p:nth-last-child(2) {
+            font-style: italic;
+            font-size: 1.4em;
+            margin-top: 2em;
             padding: 20px;
-            line-height: 1.6;
-            background-color: black;
-            color: red;
+            border-left: 5px solid #8b0000;
+            background: rgba(139, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            p {
+                font-size: 1.1em;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>The Worst Crime in the World
-
-Circumcision is the worst crime ever normalized.
-
-Right after leaving the safest place you'll ever know—your mother's womb—you get strapped down.
-
-A blade cuts through your most pleasurable body part for 10–20 minutes.
-
-You scream until your eyes bleed and your lungs collapse from exhaustion.
-The doctor swore "first, do no harm" 
-
-while doing exactly that.
-
-Your parents maybe didn't know.
-
-They were told it was safer, cleaner, or required by God.
-
-They trusted the system.
-
-They possibly handed you over thinking they were protecting you.
-
-They'll never be told the foreskin wasn't "extra skin"—it was almost all the sensitive tissue you were supposed to have for life.
-
-You won't know what slow, deep, effortless sex feels like.
-
-Sex will take more work, more lube, less feeling.
-
-You'll wonder why it feels like something's missing and be told "that's normal."
-
-You might feel jealous of women, angry at your own body, and feel conflicted for feeling that way.
-
-You'll possibly cope for life.
-
-And if you ever speak up, people will laugh and say "get over it, you were just a baby."
-
-But it was a crime.
-
-One day this will be seen like bloodletting or lobotomies—something we can't believe we ever did to babies.
-
-If you're reading this and you're cut, your pain is real.
-
-If you're reading this and you're a parent who chose accidentally it, please apologize and ask for forgiveness 
-
-</h1>
-    <p>I want you to know this</p>
+    <div class="container">
+        <h1>The Worst Crime in the World</h1>
+        
+        <p>Circumcision is the worst crime ever normalized.</p>
+        
+        <p>Right after leaving the safest place you'll ever know—your mother's womb—you get strapped down.</p>
+        
+        <p>A blade cuts through your most pleasurable body part for 10–20 minutes.</p>
+        
+        <p>You scream until your eyes bleed and your lungs collapse from exhaustion.</p>
+        
+        <p>The doctor swore "first, do no harm" while doing exactly that.</p>
+        
+        <p>Your parents maybe didn't know.</p>
+        
+        <p>They were told it was safer, cleaner, or required by God.</p>
+        
+        <p>They trusted the system.</p>
+        
+        <p>They possibly handed you over thinking they were protecting you.</p>
+        
+        <p>They'll never be told the foreskin wasn't "extra skin"—it was almost all the sensitive tissue you were supposed to have for life.</p>
+        
+        <p>You won't know what slow, deep, effortless sex feels like.</p>
+        
+        <p>Sex will take more work, more lube, less feeling.</p>
+        
+        <p>You'll wonder why it feels like something's missing and be told "that's normal."</p>
+        
+        <p>You might feel jealous of women, angry at your own body, and feel conflicted for feeling that way.</p>
+        
+        <p>You'll possibly cope for life.</p>
+        
+        <p>And if you ever speak up, people will laugh and say "get over it, you were just a baby."</p>
+        
+        <p>But it was a crime.</p>
+        
+        <p>One day this will be seen like bloodletting or lobotomies—something we can't believe we ever did to babies.</p>
+        
+        <p>If you're reading this and you're cut, your pain is real.</p>
+        
+        <p>If you're reading this and you're a parent who chose accidentally it, please apologize and ask for forgiveness.</p>
+    </div>
 </body>
 </html>
